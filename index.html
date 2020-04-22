@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Topicos de informática</title>
+
+    
+    <!--- Custom CSS for this page --->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="icons/style.css">
+    <!--- Favicon --->
+    <!-- <link rel="shortcut icon" type="image/png" href="imgs/logo.png"/> -->
+</head>
+<body>
+    <input type="checkbox" id="abrir-cerrar" name="abrir-cerrar" value="">
+    <label id="hamburger" for="abrir-cerrar"><div class="button"><div class="menu_button"></div><div class="menu_button"></div><div class="menu_button"></div></div></label>
+ 
+    <div id="sidebar" class="sidebar">
+        
+        <div class="logo"><img src="img/logo.png"></div>
+            <ul class="menu select">
+                <li class="title">INICIO</li>
+                <li class="active"><a href="./index.html"><i class="icon-home icon"></i>Inicio</a></li>
+                <li class="title">INFORMACIÓN</li>
+                <li><a href="#"><i class="icon-graduation-cap icon"></i>Alumnos <i class="icon-chevron-small-right icon-right icon"></i></a>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="sub_menu"></i>
+                                Calificaciones
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li ><a href="#"><i class="icon-users icon"></i>Profesores </a></li>
+                <li><a href="#"><i class="icon-text-document icon"></i>Clases<i class="icon-chevron-small-right icon-right icon"></i></a>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="sub_menu"></i>
+                                Horarios
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li ><a href="#"><i class="icon-folder icon"></i>Programas educativos</a></li>
+                <li ><a href="#"><i class="icon-v-card icon"></i>Administrador</a></li>
+            </ul>
+    </div>
+    <div id="contenido">
+
+        
+    </div>
+    <footer>
+        2020 &copy; Brenda Abigail Xolo Rodriguez &nbsp;
+        <a href="mailto:jauregui_mtz97@icloud.com" target="_top" class="makerCss"> Información</a>
+    </footer>
+    
+    
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="./scripts/menu.js"></script>
+</body>
+</html>
