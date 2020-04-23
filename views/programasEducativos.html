@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Topicos de informática</title>
+
+    <!--- Bootstrap CSS --->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--- Custom CSS for this page --->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../icons/style.css">
+    <link rel="stylesheet" href="../css/programasEducativos.css">
+    <!--- Favicon --->
+    <!-- <link rel="shortcut icon" type="image/png" href="imgs/logo.png"/> -->
+</head>
+<body>
+    <input type="checkbox" id="abrir-cerrar" name="abrir-cerrar" value="">
+    <label id="hamburger" for="abrir-cerrar"><div class="button"><div class="menu_button"></div><div class="menu_button"></div><div class="menu_button"></div></div></label>
+ 
+    <div id="sidebar" class="sidebar">
+        
+        <div class="logo"><img src="../img/logo.png"></div>
+        <ul class="menu select">
+            <li class="title">INICIO</li>
+            <li><a href="../index.html"><i class="icon-home icon"></i>Inicio</a></li>
+            <li class="title">INFORMACIÓN</li>
+            <li><a href="#"><i class="icon-graduation-cap icon"></i>Alumnos <i class="icon-chevron-small-right icon-right icon"></i></a>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="sub_menu"></i>
+                            Calificaciones
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li ><a href="#"><i class="icon-users icon"></i>Profesores </a></li>
+            <li><a href="#"><i class="icon-text-document icon"></i>Clases<i class="icon-chevron-small-right icon-right icon"></i></a>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="sub_menu"></i>
+                            Horarios
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="active"><a href="./programasEducativos.html"><i class="icon-folder icon"></i>Programas educativos</a></li>
+            <li ><a href="#"><i class="icon-v-card icon"></i>Administrador</a></li>
+        </ul>
+    </div>
+    <div id="contenido" >
+        <div class="card container-fluid">
+
+            <h5>AGREGAR PROGRAMA EDUCATIVO</h5>
+            <form class="row">
+                <div class="col-md-6">
+                    <label for="clave" class="info_label">Clave del programa educativo</label>
+                    <input name="clave" id="claveprogram" placeholder="Ingresar..." type="text">
+                </div>
+                <div class="col-md-6">
+                    <label for="examplePassword11" class="info_label">Créditos</label>
+                    <input name="creditos" id="numcreditos" placeholder="Ingresar..." type="number">
+                </div>
+                <div class="col-12">
+                    <label for="exampleAddress" class="info_label">Nombre del programa educativo</label>
+                    <input name="name" id="nameprogram" placeholder="Ingresar..." type="text">
+                </div>
+                <div class="col-12">
+                <button id="guardar" type="submit" class="guardar">Guardar</button>
+                <button id="cancelar" type="reset" class="cancelar">Cancelar</button>
+                </div>
+            </form>
+            
+        </div>
+        
+    </div>
+    <footer>
+        2020 &copy; Brenda Abigail Xolo Rodriguez &nbsp;
+        <a href="mailto:jauregui_mtz97@icloud.com" target="_top" class="makerCss"> Información</a>
+    </footer>
+    
+    
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="../scripts/menu.js"></script>
+    <!--- Bootstrap JS --->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+</body>
+</html>

@@ -8,6 +8,7 @@ body {
     font-size: .7rem;
     font-weight: 400;
     line-height: 1.5;
+    box-sizing: content-box;
 }
 header {
     background-image: radial-gradient(circle 248px at center, #16d9e3, #30c7ec 47%, #46aef7) !important;
@@ -115,9 +116,12 @@ input#abrir-cerrar:checked + label[for="abrir-cerrar"] .abrir {
 .logo img{
     max-width: 59px;
     padding: 5px 0px 0px 37%;
+    box-sizing: content-box;
 }
 .logo{
     background-color: #02B2ED;
+    height: 60px;
+    box-sizing: content-box;
 }
 /*endlogo*/
 
@@ -209,10 +213,12 @@ footer{
 
 /*content*/
 #contenido {
-    padding: 30px 30px 0;
+    padding: 15px 15px 0;
     display: flex;
 }
 /*endcontent*/
+
+
 
 @media (min-width: 576px) {  
     body{
@@ -223,6 +229,11 @@ footer{
     }
     input#abrir-cerrar:checked ~ #sidebar {
         width:280px;
+    }
+}
+@media (min-width: 768px) {  
+    #contenido {
+        padding: 30px 30px 0;
     }
 }
 
