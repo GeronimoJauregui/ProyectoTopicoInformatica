@@ -198,12 +198,12 @@ input#abrir-cerrar:checked + label[for="abrir-cerrar"] .abrir {
 
 /*footer*/
 footer{
-    position: absolute;
+    /* position: absolute; */
     bottom: 0;
     width: 100%;
     padding: 0 1.5rem 0 .75rem;
     height: 60px;
-    display: flex;
+    /* display: flex; */
     align-content: center;
     align-items: center;
     background: #fafbfc;
@@ -213,12 +213,10 @@ footer{
 
 /*content*/
 #contenido {
-    padding: 15px 15px 0;
+    padding: 0px 0px 0;
     display: flex;
 }
 /*endcontent*/
-
-
 
 @media (min-width: 576px) {  
     body{
@@ -233,7 +231,7 @@ footer{
 }
 @media (min-width: 768px) {  
     #contenido {
-        padding: 30px 30px 0;
+        padding: 15px 15px 0;
     }
 }
 
